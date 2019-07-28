@@ -26,15 +26,17 @@ const Header = props => {
         </div>
 
         <Link to={`/login`}>
-          <a href="/login" className="btn btn-white btn-animated" />
+          <a href="/login" className="btn btn-white btn-animated">
+            Login
+          </a>
         </Link>
       </header>
 
       <div className="mission">
         <h3>
           {" "}
-          Our Mission is to educate and empower our users how to build wealth on
-          their own by becoming financially literate.
+          Our Mission is to educate and empower youth from ages 13 to 18 on how
+          to build wealth on their own by becoming financially literate.
         </h3>
       </div>
     </div>

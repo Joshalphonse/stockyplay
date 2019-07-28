@@ -14,6 +14,7 @@ import Dropdown from "react-dropdown";
 import formatNum from "./format-number";
 
 import UserImg from "../assets/images/user-img-placeholder.jpeg";
+import { Link, withRouter } from "react-router-dom";
 
 ReactFC.fcRoot(FusionCharts, Charts, Maps, USARegion);
 
@@ -202,6 +203,9 @@ class Dashboard extends Component {
           </Container>
           <Container className="navbar-nav ml-auto">
             <Container className="user-detail-section">
+              <Link to="/leaderBoard">
+                <li>Leader Board</li>
+              </Link>
               <span className="pr-2">Hi, Maverick</span>
               <span className="img-container">
                 <img
@@ -308,13 +312,13 @@ class Dashboard extends Component {
               <Container className="card grid-card is-card-dark">
                 <Container className="card-heading mb-3">
                   <Container className="is-dark-text-light letter-spacing text-small">
-                    Product Views
+                    Stock Buyers
                   </Container>
                 </Container>
                 <Container className="card-value pt-4 text-x-large">
                   {this.state.productViews}
                   <span className="text-medium pl-2 is-dark-text-light">
-                    views
+                    buyers
                   </span>
                 </Container>
               </Container>
@@ -366,7 +370,7 @@ class Dashboard extends Component {
                           containerBackgroundOpacity: "0",
                           dataSource: {
                             chart: {
-                              caption: "Checkout Rate",
+                              caption: "DOW Jones Industrial Average",
                               theme: "ecommerce",
                               defaultCenterLabel: `${this.state.checkoutRate}%`,
                               paletteColors: "#41B6C4, #000000"
@@ -398,7 +402,7 @@ class Dashboard extends Component {
                           containerBackgroundOpacity: "0",
                           dataSource: {
                             chart: {
-                              caption: "Abandoned Cart Rate",
+                              caption: "NASDAQ Performance",
                               theme: "ecommerce",
                               defaultCenterLabel: `${
                                 this.state.abandonedRate
@@ -442,8 +446,8 @@ class Dashboard extends Component {
                       dataSource: {
                         chart: {
                           theme: "ecommerce",
-                          caption: "Orders Trend",
-                          subCaption: "By Stores"
+                          caption: "My Top 3 Stock Performance"
+                          // subCaption: "By "
                         },
                         data: this.state.ordersTrendStore
                       }
@@ -467,7 +471,7 @@ class Dashboard extends Component {
                       dataSource: {
                         chart: {
                           theme: "ecommerce",
-                          caption: "Orders Trend",
+                          caption: "Stock Trend",
                           subCaption: "By Region"
                         },
                         colorrange: {

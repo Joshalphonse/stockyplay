@@ -1,21 +1,21 @@
 body {
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
 }
 
-.login{
-  margin-top: 100px;
+.login-page {
   display: flex;
-  margin-left: 55%;
+  margin-left: 40%;
 }
 
-.welcome{
+.welcome {
   font-weight: bold;
   font-size: 26px;
-  color: #E67D5D;
-
+  color: #fff;
 }
 
-.button{
-  background-color: #E67D5D;
+.button {
+  background-color: #e67d5d;
+}
+
+.label {
+  color: #fff;
 }
