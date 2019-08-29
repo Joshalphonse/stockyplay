@@ -25,9 +25,9 @@ const Header = props => {
           </h1>
         </div>
 
-        <Link to={`/login`}>
-          <a href="/login" className="btn btn-white btn-animated">
-            Login
+        <Link to={`/signup`}>
+          <a href="/signup" className="btn btn-white btn-animated">
+            Sign Up
           </a>
         </Link>
       </header>

@@ -5,21 +5,29 @@ import { Feed } from "semantic-ui-react";
 import { Img } from "./styled-components";
 
 const LeaderBoard = () => (
-  //
-  // const image = styled.img {
+  // const Img = styled.Img {
   //   width: 50%
   // }
 
   <Feed>
     <Feed.Event>
+      <Image
+        classname="trophyImg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMooRfgyWvg5Q9UmHyrFYWL2nPuzXKbtMgnw0Us-4a7YXlwYFC"
+        alt="trophy"
+      />
       <Feed.Label
         className="img"
         image="https://media.giphy.com/media/Lb4IZLmCfALhm/giphy.gif"
+        style={{ width: "80%" }}
       />
       <Feed.Content>
         <Feed.Date>1 days ago</Feed.Date>
         <Feed.Summary>
-          <a>Alicia Syrett</a> is leading Stockaid with 8% gain.
+          <span>
+            <a>Alicia Syrett</a>
+          </span>
+          is leading Stockaid with 8% gain.
         </Feed.Summary>
       </Feed.Content>
 
